@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_home_work5/constants/constants.dart';
+import 'widgets/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,47 +32,21 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('My Homework'),
         ),
-      body: Center(
+      body: const Center(
         child: Column(
           children: <Widget>[
-            const SizedBox(height: 10),
-            const Text(
+            SizedBox(height: 10),
+            Text(
               'Beautiful Images',
               style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.grey,
-                ),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Image.network(
-                'https://fastly.picsum.photos/id/179/2048/1365.jpg?hmac=GJyDjrvfBfjPfJPqSBd2pX6sjvsGbG10d21blr5bTS8',
-                height: 200,
-                width: 200,
-              ),
-            ),
-            const SizedBox(height: 20),
-            Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.grey,
-                ),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Image.network(
-                'https://fastly.picsum.photos/id/200/1920/1280.jpg?hmac=-eKjMC8-UrbLMpy1A4OWrK0feVPB3Ka5KNOGibQzpRU',
-                height: 200,
-                width: 200,
-              ),
-            ),
-            const Text(
+            ImgContainer(imgUrl: UrlImages.imgSea),
+            SizedBox(height: 20),
+            ImgContainer(imgUrl: UrlImages.imgAnimal),
+            Text(
               'My text',
               style: TextStyle(
                 fontSize: 20,
@@ -78,6 +54,7 @@ class MyHomePage extends StatelessWidget {
                 fontStyle: FontStyle.italic,
               ),
             ),
+            ImgAssetsContainer(imgUrl: 'assets/images/pumpkin.jpg'),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
