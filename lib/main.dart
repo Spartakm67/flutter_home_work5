@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_home_work5/constants/constants.dart';
 import 'package:flutter_home_work5/services/services.dart';
+import 'package:flutter_home_work5/styles/styles.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,38 +38,19 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             const Text(
               'Beautiful Images',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-              ),
+              style: BeautifulTextStyles.beautifulText,
             ),
             WidgetBuilderService.buildWidget(UrlImages.imgSea),
             const SizedBox(height: 20),
             WidgetBuilderService.buildWidget(UrlImages.imgAnimal),
             const Text(
               'My text',
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-              ),
+              style: DefaultTextStyles.defaultText,
             ),
             WidgetBuilderService.buildWidget(AssetsImages.pumpkin),
             const Text(
               'Trick or Treat!',
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontWeight: FontWeight.bold,
-                shadows: [
-                  Shadow(
-                    offset: Offset(2.0, 3.0),
-                    blurRadius: 4.0,
-                    color: Colors.black87,
-                  ),
-                ],
-              ),
+              style: ScaryTextStyles.scaryText,
             ),
           ],
         ),
