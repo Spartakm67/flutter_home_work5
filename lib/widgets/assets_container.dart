@@ -11,9 +11,10 @@ class ImgAssetsContainer extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         border: Border.all(
-          color: Colors.grey,
+          color: Colors.redAccent,
+          width: 5.0,
         ),
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(30),
       ),
       child: Image.asset(
         imgAsset,

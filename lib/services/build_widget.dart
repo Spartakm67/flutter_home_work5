@@ -9,5 +9,6 @@ static Widget buildWidget(String image) {
     return ImgContainer(imgUrl: image);
   } else {
     return ImgAssetsContainer(imgAsset: image);
+    }
   }
-}}
+}

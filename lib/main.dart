@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_home_work5/constants/constants.dart';
-import 'package:flutter_home_work5/widgets/widgets.dart';
 import 'package:flutter_home_work5/services/services.dart';
 
 void main() {
@@ -44,10 +43,8 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
             WidgetBuilderService.buildWidget(UrlImages.imgSea),
-            // ImgContainer(imgUrl: UrlImages.imgSea),
             const SizedBox(height: 20),
             WidgetBuilderService.buildWidget(UrlImages.imgAnimal),
-            // const ImgContainer(imgUrl: UrlImages.imgAnimal),
             const Text(
               'My text',
               style: TextStyle(
@@ -57,7 +54,6 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
             WidgetBuilderService.buildWidget(AssetsImages.pumpkin),
-            // const ImgAssetsContainer(imgAsset: AssetsImages.pumpkin),
             const Text(
               'Trick or Treat!',
               style: TextStyle(
@@ -65,6 +61,13 @@ class MyHomePage extends StatelessWidget {
                 color: Colors.red,
                 fontStyle: FontStyle.italic,
                 fontWeight: FontWeight.bold,
+                shadows: [
+                  Shadow(
+                    offset: Offset(2.0, 3.0),
+                    blurRadius: 4.0,
+                    color: Colors.black87,
+                  ),
+                ],
               ),
             ),
           ],
