@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ImgAssetsContainer extends StatelessWidget {
-  final String imgUrl;
+  final String imgAsset;
 
-  const ImgAssetsContainer({super.key, required this.imgUrl});
+  const ImgAssetsContainer({super.key, required this.imgAsset});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class ImgAssetsContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: Image.asset(
-        'assets/images/pumpkin.jpg',
+        imgAsset,
         height: 200,
         width: 200,
       ),
