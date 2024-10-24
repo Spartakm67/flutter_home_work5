@@ -32,7 +32,6 @@ class MyHomePage extends StatelessWidget {
         ),
       body: Center(
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const SizedBox(height: 10),
             const Text(
