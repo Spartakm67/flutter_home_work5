@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ScaryTextStyles {
+class TextStyles {
   static const TextStyle scaryText = TextStyle(
     fontSize: 20,
     color: Colors.red,
@@ -14,17 +14,13 @@ class ScaryTextStyles {
       ),
     ],
   );
-}
 
-class DefaultTextStyles {
   static const TextStyle defaultText = TextStyle(
     fontSize: 20,
     color: Colors.red,
     fontStyle: FontStyle.italic,
   );
-}
 
-class BeautifulTextStyles {
   static const TextStyle beautifulText = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.bold,

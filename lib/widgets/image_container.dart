@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ImgContainer extends StatelessWidget {
+class ImageContainer extends StatelessWidget {
   final String imgUrl;
 
-  const ImgContainer({super.key, required this.imgUrl});
+  const ImageContainer({super.key, required this.imgUrl});
 
   @override
   Widget build(BuildContext context) {

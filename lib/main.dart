@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_home_work5/constants/constants.dart';
-import 'package:flutter_home_work5/services/services.dart';
-import 'package:flutter_home_work5/styles/styles.dart';
+import 'package:flutter_home_work5/constants/assets_images.dart';
+import 'package:flutter_home_work5/constants/url_images.dart';
+import 'package:flutter_home_work5/services/build_widget.dart';
+import 'package:flutter_home_work5/styles/text_styles.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,23 +39,23 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             const Text(
               'Beautiful Images',
-              style: BeautifulTextStyles.beautifulText,
+              style: TextStyles.beautifulText,
             ),
             WidgetBuilderService.buildWidget(UrlImages.imgSea),
             const SizedBox(height: 20),
             WidgetBuilderService.buildWidget(UrlImages.imgAnimal),
             const Text(
               'My text',
-              style: DefaultTextStyles.defaultText,
+              style: TextStyles.defaultText,
             ),
             WidgetBuilderService.buildWidget(AssetsImages.pumpkin),
             const Text(
               'Trick or Treat!',
-              style: ScaryTextStyles.scaryText,
+              style: TextStyles.scaryText,
             ),
           ],
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
